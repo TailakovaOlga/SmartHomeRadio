@@ -94,15 +94,6 @@ public class Radio {
         }
     }
 
-
-    public void changeOnPreviousRadioStation() { //Переключение на 9 радиостанцию, если текущая радиостанция 0
-        if (currentRadioStation == 0) {
-            this.currentRadioStation = 9;
-            return;
-        }
-        this.currentRadioStation--;
-    }
-
     public void changeOnNextRadioStation() { //Переключить на следующую радиостанцию
         if (currentRadioStation == 9) {
             this.currentRadioStation = 0;

@@ -25,31 +25,11 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldChangeOnPreviousRadioStationMin() {
-        Radio radio = new Radio();
-        int currentRadioStation = 0;
-        radio.setCurrentRadioStation(currentRadioStation);
-        radio.changeOnPreviousRadioStation();
-        int expected = 9;
-        Assertions.assertEquals(expected, radio.getCurrentRadioStation());
-    }
-
-    @Test
     public void shouldNotChangeOnNextRadioStationIfStationIsMax() {
         Radio radio = new Radio();
         int currentRadioStation = 9;
         radio.setCurrentRadioStation(currentRadioStation);
         radio.changeOnNextRadioStation();
-        int expected = 0;
-        Assertions.assertEquals(expected, radio.getCurrentRadioStation());
-    }
-
-    @Test
-    public void shouldChangeOnPreviousRadioStation() {
-        Radio radio = new Radio();
-        int currentRadioStation = 1;
-        radio.setCurrentRadioStation(currentRadioStation);
-        radio.changeOnPreviousRadioStation();
         int expected = 0;
         Assertions.assertEquals(expected, radio.getCurrentRadioStation());
     }
@@ -129,16 +109,6 @@ public class RadioTest {
         int expected = 9;
         int actual = radio.getCurrentRadioStation();
         Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
-    void shouldChangeOnPreviousRadioStationIfStationIsMin() {
-        Radio radio = new Radio();
-        int currentRadioStation = 0;
-        radio.setCurrentRadioStation(currentRadioStation);
-        radio.changeOnPreviousRadioStation();
-        int expected = 9;
-        Assertions.assertEquals(expected, radio.getCurrentRadioStation());
     }
 
     @Test
