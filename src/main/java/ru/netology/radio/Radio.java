@@ -114,8 +114,8 @@ public class Radio {
 
     //public void increaseSoundVolumeByOne() {   // увеличение громкости на 1
     //    if (currentSoundVolume < 100) {
-          //  currentSoundVolume = currentSoundVolume + 1;
-       // }
+    //  currentSoundVolume = currentSoundVolume + 1;
+    // }
     //}
 
     public void currentSoundVolumeUp() {                // увеличение громкости на 1
@@ -131,11 +131,11 @@ public class Radio {
     }
 }
 
-        // public void nextCurrentRadioStation() {                // следующая радиостанция
-        //  if (currentRadioStation < 9) {
-        //      currentRadioStation = currentRadioStation + 1;
-        // } else {
-        //     currentRadioStation = 0;
+// public void nextCurrentRadioStation() {                // следующая радиостанция
+//  if (currentRadioStation < 9) {
+//      currentRadioStation = currentRadioStation + 1;
+// } else {
+//     currentRadioStation = 0;
 
 
 
