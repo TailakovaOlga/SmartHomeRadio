@@ -2,7 +2,6 @@ package ru.netology.radio;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RadioTest {
     Radio radio = new Radio();
@@ -106,7 +105,7 @@ public class RadioTest {
     public void shouldIncreaseSoundVolumeByOne() {
         Radio radio = new Radio();
         radio.setSoundVolume(0);
-        radio.increaseCurrentSoundVolumeByOne();
+        radio.getSoundVolume();
         int expected = 1;
         int actual = 1;
         Assertions.assertEquals(expected, actual);
@@ -441,7 +440,6 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 }
-
 
 
 

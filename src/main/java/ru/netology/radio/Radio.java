@@ -112,34 +112,20 @@ public class Radio {
     }
 
     public int getSoundVolume() {
+
         return soundVolume;
     }
 
     public void setSoundVolume(int soundVolume) {
-        if (soundVolume > 0) {
-        }
-        if (soundVolume < 100) {
-        }
+
         this.soundVolume = soundVolume;
     }
 
-
-    // public void volumeDownForByOne() {
-    //    if (soundVolume == 0) {
-    //       this.soundVolume = soundVolume;
-    //  }
-    //  if (soundVolume > 0) {
-    //     this.soundVolume--;
-    // }
+    //public void increaseSoundVolumeByOne() {   // увеличение громкости на 1
+    //    if (currentSoundVolume < 100) {
+          //  currentSoundVolume = currentSoundVolume + 1;
+       // }
     //}
-
-    public void increaseCurrentSoundVolumeByOne() {   // увеличение громкости на 1
-        if (currentSoundVolume < 100) {
-            currentSoundVolume = currentSoundVolume + 1;
-            for (int i = 0; i < currentSoundVolume; i++) {
-            }
-        }
-    }
 
     public void currentSoundVolumeUp() {                // увеличение громкости на 1
         if (currentSoundVolume < 100) {
@@ -152,13 +138,18 @@ public class Radio {
             currentSoundVolume = currentSoundVolume - 1;
         }
     }
-
-    // public void nextCurrentRadioStation() {                // следующая радиостанция
-    //  if (currentRadioStation < 9) {
-    //      currentRadioStation = currentRadioStation + 1;
-    // } else {
-    //     currentRadioStation = 0;
 }
+
+        // public void nextCurrentRadioStation() {                // следующая радиостанция
+        //  if (currentRadioStation < 9) {
+        //      currentRadioStation = currentRadioStation + 1;
+        // } else {
+        //     currentRadioStation = 0;
+
+
+
+
+
 
 
 
