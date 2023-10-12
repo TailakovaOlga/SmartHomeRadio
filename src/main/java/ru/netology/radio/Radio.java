@@ -2,13 +2,12 @@ package ru.netology.radio;
 
 public class Radio {
     private int currentRadioStation;   //Текущая радиотанции
-    public int currentSoundVolume;   //Текущая громкость звука
-    public int soundVolume;   //Громкость звука
-    private int MaxNumberRadioStation = 9;
-    private int MinNumberRadioStation = 0;
-    private int CurrentRadioVolume;
-    private int MaxSoundVolume = 100;
-    private int MinSoundVolume = 0;
+    private int currentSoundVolume;   //Текущая громкость звука
+    private int soundVolume;   //Громкость звука
+    private int maxNumberRadioStation = 9;
+    private int minNumberRadioStation = 0;
+    private int maxSoundVolume = 100;
+    private int minSoundVolume = 0;
 
 
     public int getCurrenSoundVolume() {
@@ -34,48 +33,48 @@ public class Radio {
     }
 
     public void setNextCurrentRadioStation() {
-        if (currentRadioStation < MaxNumberRadioStation) {
+        if (currentRadioStation < maxNumberRadioStation) {
             currentRadioStation = currentRadioStation + 1;
         } else {
-            currentRadioStation = MaxNumberRadioStation;
+            currentRadioStation = maxNumberRadioStation;
         }
     }
 
     public void setPrevCurrentRadioStation() {
-        if (currentRadioStation > MinNumberRadioStation) {
+        if (currentRadioStation > minNumberRadioStation) {
             currentRadioStation = currentRadioStation - 1;
         } else {
-            currentRadioStation = MaxNumberRadioStation;
+            currentRadioStation = maxNumberRadioStation;
         }
     }
 
     public int getCurrentSoundVolume() {
-        return CurrentRadioVolume;
+        return currentSoundVolume;
     }
 
     public void setCurrentSoundVolume(int newCurrentRadioVolume) {
-        if (newCurrentRadioVolume > MaxSoundVolume) {
+        if (newCurrentRadioVolume > maxSoundVolume) {
             return;
         }
-        if (newCurrentRadioVolume < MinSoundVolume) {
+        if (newCurrentRadioVolume < minSoundVolume) {
             return;
         }
-        CurrentRadioVolume = newCurrentRadioVolume;
+        currentSoundVolume = newCurrentRadioVolume;
     }
 
     public void setUpCurrentSoundVolume() {
-        if (CurrentRadioVolume < MaxSoundVolume) {
-            CurrentRadioVolume = CurrentRadioVolume + 1;
+        if (currentSoundVolume < maxSoundVolume) {
+            currentSoundVolume = currentSoundVolume + 1;
         } else {
-            CurrentRadioVolume = MaxSoundVolume;
+            currentSoundVolume = maxSoundVolume;
         }
     }
 
     public void setDownCurrentSoundVolume() {
-        if (CurrentRadioVolume > MinSoundVolume) {
-            CurrentRadioVolume = CurrentRadioVolume - 1;
+        if (currentSoundVolume > minSoundVolume) {
+            currentSoundVolume = currentSoundVolume - 1;
         } else {
-            CurrentRadioVolume = MinSoundVolume;
+            currentSoundVolume = minSoundVolume;
         }
     }
 
