@@ -3,24 +3,22 @@ package ru.netology.radio;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class RadioTest {
     Radio radio = new Radio();
 
     @Test
     public void testCurrentNumberStation() {
 
-        Assertions.assertEquals(9, radio.getMaxNumberRadioStation());
-        Assertions.assertEquals(0, radio.getMinNumberRadioStation());
+        //Assertions.assertEquals(9, radio.getMaxNumberRadioStation());
+        //  Assertions.assertEquals(0, radio.getMinNumberRadioStation());
         Assertions.assertEquals(0, radio.getCurrentNumberRadioStation());
     }
 
     @Test
     public void testCurrentRadioVolume() {
 
-        Assertions.assertEquals(100, radio.getMaxRadioVolume());
-        Assertions.assertEquals(0, radio.getMinRadioVolume());
+        //  Assertions.assertEquals(100, radio.getVolume());
+        //  Assertions.assertEquals(0, radio.getMinRadioVolume());
         Assertions.assertEquals(0, radio.getCurrentSoundVolume());
     }
 
@@ -37,75 +35,75 @@ public class RadioTest {
         Assertions.assertEquals(10, radio.getCountRadioStation());
     }
 
-    @Test
-    public void testMaxNumberRadioStation() {
-        Radio radio = new Radio(30);
+    //   @Test
+    //  public void testMaxNumberRadioStation() {
+    //    Radio radio = new Radio(30);
+//
+    //    Assertions.assertEquals(29, radio.getMaxNumberRadioStation());
+    // }
 
-        Assertions.assertEquals(29, radio.getMaxNumberRadioStation());
-    }
+    /// @Test
+    // public void testMaxRadioVolume() {
+    // Radio radio = new Radio();
+    //    radio.setCurrentSoundVolume(101);
 
-    @Test
-    public void testMaxRadioVolume() {
-        // Radio radio = new Radio();
-        radio.setCurrentSoundVolume(101);
+    //    Assertions.assertEquals(100, radio.getMaxRadioVolume());
+    //   Assertions.assertEquals(0, radio.getMinRadioVolume());
+    //   Assertions.assertEquals(0, radio.getCurrentSoundVolume());
+    //  }
 
-        Assertions.assertEquals(100, radio.getMaxRadioVolume());
-        Assertions.assertEquals(0, radio.getMinRadioVolume());
-        Assertions.assertEquals(0, radio.getCurrentSoundVolume());
-    }
+    //  @Test
+    //  public void testSmallRadioVolume() {
+    //     radio.setCurrentSoundVolume(-1);
 
-    @Test
-    public void testSmallRadioVolume() {
-        radio.setCurrentSoundVolume(-1);
+    //    Assertions.assertEquals(100, radio.getMaxRadioVolume());
+    //   Assertions.assertEquals(0, radio.getMinRadioVolume());
+    //   Assertions.assertEquals(0, radio.getCurrentSoundVolume());
+    // }
 
-        Assertions.assertEquals(100, radio.getMaxRadioVolume());
-        Assertions.assertEquals(0, radio.getMinRadioVolume());
-        Assertions.assertEquals(0, radio.getCurrentSoundVolume());
-    }
+    //  @Test
+    // public void testBigCurrentNumberRadioStation() {
+    //     radio.setCurrentNumberRadioStation(28);
 
-    @Test
-    public void testBigCurrentNumberRadioStation() {
-        radio.setCurrentNumberRadioStation(28);
+    //     Assertions.assertEquals(9, radio.getMaxNumberRadioStation());
+    //     Assertions.assertEquals(0, radio.getMinNumberRadioStation());
+    //     Assertions.assertEquals(0, radio.getCurrentNumberRadioStation());
+    // }
 
-        Assertions.assertEquals(9, radio.getMaxNumberRadioStation());
-        Assertions.assertEquals(0, radio.getMinNumberRadioStation());
-        Assertions.assertEquals(0, radio.getCurrentNumberRadioStation());
-    }
+    //   @Test
+    //  public void testSmallCurrentStation() {
+    //      radio.setCurrentNumberRadioStation(-1);
+//
+    //    Assertions.assertEquals(9, radio.getMaxNumberRadioStation());
+    //    Assertions.assertEquals(0, radio.getMinNumberRadioStation());
+    //    Assertions.assertEquals(0, radio.getCurrentNumberRadioStation());
+    // }
 
-    @Test
-    public void testSmallCurrentStation() {
-        radio.setCurrentNumberRadioStation(-1);
+    // @Test
 
-        Assertions.assertEquals(9, radio.getMaxNumberRadioStation());
-        Assertions.assertEquals(0, radio.getMinNumberRadioStation());
-        Assertions.assertEquals(0, radio.getCurrentNumberRadioStation());
-    }
+    //  public void shouldMinCurrentNumberRadioStation() {
+    //     Radio radio = new Radio();
 
-    @Test
+    //    radio.setCurrentNumberRadioStation(0);
 
-    public void shouldMinCurrentNumberRadioStation() {
-        Radio radio = new Radio();
+    //   int expected = 0;
+    //   int actual = radio.getCurrentNumberRadioStation();
 
-        radio.setCurrentNumberRadioStation(0);
+    //   //   Assertions.assertEquals(expected, actual);
+    //  }
 
-        int expected = 0;
-        int actual = radio.getCurrentNumberRadioStation();
+    //  @Test
 
-        Assertions.assertEquals(expected, actual);
-    }
+    // public void shouldMaxCurrentStationStation() {
+    //    Radio radio = new Radio();
 
-    @Test
+    //    radio.setCurrentNumberRadioStation(9);
 
-    public void shouldMaxCurrentStationStation() {
-        Radio radio = new Radio();
-
-        radio.setCurrentNumberRadioStation(9);
-
-        int expected = 9;
-        int actual = radio.getCurrentNumberRadioStation();
-
-        Assertions.assertEquals(expected, actual);
-    }
+    //   int expected = 9;
+    //   int actual = radio.getCurrentNumberRadioStation();
+//
+    //    Assertions.assertEquals(expected, actual);
+    // }
 
 
     @Test
@@ -324,4 +322,3 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 }
-

@@ -6,19 +6,18 @@ public class Radio {
     private int minNumberRadioStation = 0;
     private int maxNumberRadioStation = 9;
     private int currentSoundVolume;
-    private int currentRadioStation;
+    private int currentNumberRadioStation;
     private int countRadioStation = 10;
-    private int currentNumberRadioStation = minNumberRadioStation;
 
-  public Radio(int number) {
-      maxNumberRadioStation = minNumberRadioStation + number - 1;
-      countRadioStation = number;
-  }
+    public Radio(int number) {
+        maxNumberRadioStation = minNumberRadioStation + number - 1;
+        countRadioStation = number;
+    }
 
     public Radio() {
-        this.minNumberRadioStation = minNumberRadioStation;
-        this.maxNumberRadioStation = maxNumberRadioStation;
-        this.currentNumberRadioStation = minNumberRadioStation;
+        //   this.minNumberRadioStation = minNumberRadioStation;
+        //  this.maxNumberRadioStation = maxNumberRadioStation;
+        //  this.currentNumberRadioStation = minNumberRadioStation;
         this.countRadioStation = countRadioStation;
     }
 
@@ -31,21 +30,21 @@ public class Radio {
         return countRadioStation;
     }
 
-    public int getMaxNumberRadioStation() {
-        return maxNumberRadioStation;
-    }
+    // public int getMaxNumberRadioStation() {
+    //    return maxNumberRadioStation;
+    // }
 
-    public int getMinNumberRadioStation() {
-        return minNumberRadioStation;
-    }
+    //  public int getMinNumberRadioStation() {
+    //     return minNumberRadioStation;
+    // }
 
-    public int getMaxRadioVolume() {
-        return maxSoundVolume;
-    }
+    //  public int getMaxRadioVolume() {
+    //      return maxSoundVolume;
+    // }
 
-    public int getMinRadioVolume() {
-        return minSoundVolume;
-    }
+    //  public int getMinRadioVolume() {
+    //     return minSoundVolume;
+    //  }
 
     public void setCurrentNumberRadioStation(int newCurrentNumberRadioStation) {
         if (newCurrentNumberRadioStation < minNumberRadioStation) {
@@ -103,5 +102,4 @@ public class Radio {
         }
     }
 }
-
 
